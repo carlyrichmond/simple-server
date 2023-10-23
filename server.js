@@ -4,11 +4,7 @@ const app = express();
 
 const port = 3000;
 
-app.get("/", (req, res) => {
-  res.send("Hello!");
-});
-
-app.get("/log", async (req, res) => {
+app.get("/", async (req, res) => {
   res.send({
     event: {
       transaction_id: 1,
